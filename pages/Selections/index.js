@@ -2,9 +2,10 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
+import "../../extras/ContentTest";
 import Link from "next/link";
 
-export default function LoginSample() {
+export default function loginSample({ ContentTest }) {
   return (
     <>
       <div className={styles.container}>
@@ -19,6 +20,9 @@ export default function LoginSample() {
         <main className={styles.main}>
           <p>Our Quality Selections</p>
           <br />
+          <p>
+            <ContentTest />
+          </p>
         </main>
       </div>
     </>
